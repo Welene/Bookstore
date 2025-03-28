@@ -1,7 +1,14 @@
 import React from 'react';
+import CartButton from '../components/CartButton';
+import Logo from '../components/Logo';
 
 function Header() {
-	return <h1 className="header__logo">BookCraze</h1>;
+	return (
+		<header>
+			<Logo />
+			<CartButton />
+		</header>
+	);
 }
 
 export default Header;
