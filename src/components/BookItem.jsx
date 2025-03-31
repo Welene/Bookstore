@@ -1,4 +1,5 @@
 import React from 'react';
+import AmountContainer from '../components/Counter';
 
 function BookItem({ book }) {
 	return (
@@ -11,7 +12,8 @@ function BookItem({ book }) {
 					{book.author}
 				</p>
 				<p className="bookListSection__bookItem-summary">{book.desc}</p>
-				<section className="bookListSection__amountContainer">
+				<AmountContainer />
+				{/* <section className="bookListSection__amountContainer">
 					<button className="bookListSection__amountContainer-add">
 						-
 					</button>
@@ -19,7 +21,7 @@ function BookItem({ book }) {
 					<button className="bookListSection__amountContainer-remove">
 						+
 					</button>
-				</section>
+				</section> */}
 			</article>
 		</>
 	);
