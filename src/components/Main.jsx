@@ -1,16 +1,8 @@
 import React from 'react';
-import BookListArticle from '../components/BookListArticle';
+import BookList from '../components/BookList';
 
 function Main() {
-	return (
-		<div>
-			<BookListArticle />
-			<BookListArticle />
-			<BookListArticle />
-			<BookListArticle />
-			<BookListArticle />
-		</div>
-	);
+	return <BookList />;
 }
 
 export default Main;
