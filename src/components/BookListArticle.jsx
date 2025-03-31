@@ -1,11 +1,14 @@
 import React from 'react';
 import BookItem from '../components/BookItem';
+import data from '../data/books.json';
 
 function BookListArticle() {
 	return (
-		<article className="bookListArticle">
-			<BookItem />
-		</article>
+		<>
+			{data.map((book, index) => (
+				<BookItem key={index} book={book} />
+			))}
+		</>
 	);
 }
 

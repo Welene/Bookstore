@@ -2,10 +2,10 @@ import React from 'react';
 
 function CartButton() {
 	return (
-		<button className="cartButton">
-			<p className="cartButton__txt">Cart</p>
-			<span className="cartButton__number"></span>
-		</button>
+		<div className="cartButton">
+			<a className="cartButton__link">Cart</a>
+			<span className="cartButton__number">0</span>
+		</div>
 	);
 }
 

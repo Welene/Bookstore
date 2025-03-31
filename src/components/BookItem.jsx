@@ -1,12 +1,12 @@
 import React from 'react';
 
-function BookItem() {
+function BookItem({ book }) {
 	return (
-		<div>
-			<h2 className="bookItem__title">Tittel på bok</h2>
-			<p className="bookItem__author">Author Here</p>
-			<p className="bookItem__summary"></p>
-		</div>
+		<>
+			<h2 className="bookItem__title">{book.title}</h2>
+			<p className="bookItem__author">{book.author}</p>
+			<p className="bookItem__summary">{book.summary}</p>
+		</>
 	);
 }
 
