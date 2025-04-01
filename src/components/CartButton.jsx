@@ -1,10 +1,10 @@
 import React from 'react';
 
-function CartButton() {
+function CartButton({ amount }) {
 	return (
 		<div className="cartButton">
 			<a className="cartButton__link">Cart</a>
-			<span className="cartButton__number">0</span>
+			<span className="cartButton__number">{amount}</span>
 		</div>
 	);
 }

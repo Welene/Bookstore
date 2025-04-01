@@ -1,7 +1,9 @@
-import React from 'react';
+import { useState } from 'react';
 import AmountContainer from '../components/Counter';
 
-function BookItem({ book }) {
+function BookItem({ book, amount, setAmount }) {
+	// const [amount, setAmount] = useState(0);
+	// console.log('dette er amount BookItem', amount);
 	return (
 		<>
 			<article className="bookListSection__bookItem">
@@ -12,7 +14,8 @@ function BookItem({ book }) {
 					{book.author}
 				</p>
 				<p className="bookListSection__bookItem-summary">{book.desc}</p>
-				<AmountContainer />
+				<AmountContainer amount={amount} setAmount={setAmount} />
+
 				{/* <section className="bookListSection__amountContainer">
 					<button className="bookListSection__amountContainer-add">
 						-
